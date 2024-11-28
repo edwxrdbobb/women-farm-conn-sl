@@ -83,7 +83,7 @@ export default function About() {
                 gap in resources and support for female farmers.
               </p>
               <p className="text-gray-700 mb-4">
-                From humble beginnings to a growing community, we've empowered countless women to take charge of their farms
+                From humble beginnings to a growing community, we have empowered countless women to take charge of their farms
                 and futures. Our journey is one of collaboration, innovation, and unwavering commitment to gender equality in agriculture.
               </p>
             </div>
@@ -96,7 +96,7 @@ export default function About() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
               {teamMembers.map((member, index) => (
                 <div key={index} className="text-center">
-                  <Image src={member.image} alt={member.name} width={150} height={150} className="rounded-full mx-auto mb-4 bg-gray-200" />
+                  <img src={member.image} alt={member.name} width={150} height={150} className="rounded-full mx-auto mb-4 bg-gray-200" />
                   <h3 className="font-semibold">{member.name}</h3>
                   <p className="text-sm text-gray-600">{member.role}</p>
                 </div>
