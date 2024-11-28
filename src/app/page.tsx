@@ -9,8 +9,8 @@ export default function Home() {
         <HeroSlider />
       </div>
 
-        {/* what we do */}
-        <WhatWeDo />
+      {/* what we do */}
+      <WhatWeDo />
 
       <div className="bg-green-700">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
@@ -19,7 +19,7 @@ export default function Home() {
               What Our Farmers Say
             </h2>
             <p className="mt-4 text-xl text-green-200">
-              "Women Farm Connect has transformed my business. The support and access to new markets have been invaluable."
+              &quot;Women Farm Connect has transformed my business. The support and access to new markets have been invaluable.&quot;
             </p>
             <p className="mt-2 text-lg font-medium text-white">
               — Amina, Vegetable Farmer
@@ -40,8 +40,8 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-12 w-full flex justify-center align-center">
-                {/* contact form */}
-                <ContactForm />
+            {/* contact form */}
+            <ContactForm />
           </div>
         </div>
       </div>
