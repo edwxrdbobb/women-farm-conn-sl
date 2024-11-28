@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import logo from "@/assets/images/logo.png"
 
 type NavigationLink = {
     name: string;
@@ -15,7 +16,7 @@ export default function Header({navigation}: { navigation: NavigationLink[] }) {
           <div className="w-full py-6 flex items-center justify-between border-b border-green-500 lg:border-none">
             <div className="flex items-center">
               <Link href="/">
-                <Image src="/placeholder.svg?height=32&width=160" alt="Women Farm Connect" width={160} height={32} className="h-8 w-auto" />
+                <Image src={logo} alt="Women Farm Connect" width={160} height={100} className="h-auto w-[150px]" />
               </Link>
               <div className="hidden ml-10 space-x-8 lg:block">
                 {navigation.map((link) => (
