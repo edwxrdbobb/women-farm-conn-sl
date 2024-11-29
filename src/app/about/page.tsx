@@ -101,7 +101,7 @@ export default function About() {
                     alt={member.name} 
                     width={150} 
                     height={150} 
-                    className="rounded-full mx-auto mb-4 bg-gray-200 w-[100px] h-[100px]" 
+                    className="rounded-full mx-auto mb-4 bg-gray-200 w-[100px] h-[100px] object-cover" 
                   />
                   <h3 className="font-semibold">{member.name}</h3>
                   <p className="text-sm text-gray-600">{member.role}</p>

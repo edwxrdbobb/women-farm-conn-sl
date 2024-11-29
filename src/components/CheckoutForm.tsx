@@ -2,7 +2,11 @@
 
 import { useState } from 'react'
 
-export default function PaymentForm() {
+interface PaymentFormProps {
+  paymentMethod: string;
+}
+
+export default function PaymentForm({ paymentMethod }: PaymentFormProps) {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -21,7 +25,7 @@ export default function PaymentForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="text-center mb-6">
-        <h2 className="text-xl font-semibold text-green-800">Complete Your Orange Money Purchase</h2>
+        <h2 className="text-xl font-semibold text-green-800">Complete Your {paymentMethod} Purchase</h2>
       </div>
       
       <input
