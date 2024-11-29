@@ -3,18 +3,18 @@ import Image from 'next/image'
 import bg from '@/assets/images/research.jpg'
 import img1 from '@/assets/images/about us.jpg'
 import img2 from '@/assets/images/Kadie.png'
-import leo from '@/assets/images/Leo.jpeg'
-import edward from '@/assets/images/edward.jpg'
-import hannah from '@/assets/images/hannah.jpg'
-import salmata from '@/assets/images/salmata.jpg'
+// import leo from '@/assets/images/Leo.jpeg'
+// import edward from '@/assets/images/edward.jpg'
+// import hannah from '@/assets/images/hannah.jpg'
+// import salmata from '@/assets/images/salmata.jpg'
 
 
 
 const teamMembers = [
-  { name: 'Leo Abdulai', image: {leo}, role: 'Project Manager' },
-  { name: 'Edward Bob-Kamara', image: {edward}, role: 'Lead Developer' },
-  { name: 'Hannah Barrie', image: {hannah}, role: 'Marketing Specialist' },
-  { name: 'Salamatu Conteh', image: {salmata}, role: 'Community Outreach Coordinator' },
+  { name: 'Leo Abdulai', image: '/Leo.jpg', role: 'Project Manager' },
+  { name: 'Edward Bob-Kamara', image: '/edward.jpg', role: 'Lead Developer' },
+  { name: 'Hannah Barrie', image: '/hannah.jpg', role: 'Marketing Specialist' },
+  { name: 'Salamatu Conteh', image: '/salmata.jpg', role: 'Community Outreach Coordinator' },
 ];
 
 export default function About() {
@@ -96,7 +96,13 @@ export default function About() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
               {teamMembers.map((member, index) => (
                 <div key={index} className="text-center">
-                  <img src={member.image} alt={member.name} width={150} height={150} className="rounded-full mx-auto mb-4 bg-gray-200" />
+                  <Image 
+                    src={member.image} 
+                    alt={member.name} 
+                    width={150} 
+                    height={150} 
+                    className="rounded-full mx-auto mb-4 bg-gray-200" 
+                  />
                   <h3 className="font-semibold">{member.name}</h3>
                   <p className="text-sm text-gray-600">{member.role}</p>
                 </div>
@@ -105,10 +111,6 @@ export default function About() {
           </div>
         </section>
       </main>
-
-      <footer className="bg-green-800 text-white py-8">
-        {/* Footer content (same as home page) */}
-      </footer>
     </div>
   )
 }

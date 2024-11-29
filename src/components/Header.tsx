@@ -27,10 +27,10 @@ export default function Header({navigation}: { navigation: NavigationLink[] }) {
               </div>
             </div>
             <div className="ml-10 space-x-4">
-              <Link href="/user/signup" className="inline-block bg-red-600 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-red-700">
+              <Link href="/user/signup" className="inline-block bg-white py-2 px-4 border border-green-600 rounded-md text-base font-medium text-green-600 hover:text-white hover:bg-green-800 ">
                 Sign up
               </Link>
-              <Link href="/user/login" className="inline-block bg-yellow-500 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-yellow-600">
+              <Link href="/user/login" className="inline-block bg-green-600 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-green-800">
                 Log in
               </Link>
             </div>
