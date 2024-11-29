@@ -10,7 +10,7 @@ export default function ProductGrid() {
       {Object.entries(groupedProducts).map(([category, products]) => (
         <div key={category} className="my-16">
           <h2 className="text-xl font-bold mb-4">{category}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {products.map((product) => (
               <Link 
                 key={product.id} 
