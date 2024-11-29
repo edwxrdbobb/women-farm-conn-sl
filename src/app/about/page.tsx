@@ -3,18 +3,18 @@ import Image from 'next/image'
 import bg from '@/assets/images/research.jpg'
 import img1 from '@/assets/images/about us.jpg'
 import img2 from '@/assets/images/Kadie.png'
-// import leo from '@/assets/images/Leo.jpeg'
-// import edward from '@/assets/images/edward.jpg'
-// import hannah from '@/assets/images/hannah.jpg'
-// import salmata from '@/assets/images/salmata.jpg'
+import leo from '@/assets/images/Leo.jpeg'
+import edward from '@/assets/images/edward.jpg'
+import hannah from '@/assets/images/hannah.jpg'
+import salmata from '@/assets/images/salmata.jpg'
 
 
 
 const teamMembers = [
-  { name: 'Leo Abdulai', image: '/Leo.jpg', role: 'Project Manager' },
-  { name: 'Edward Bob-Kamara', image: '/edward.jpg', role: 'Lead Developer' },
-  { name: 'Hannah Barrie', image: '/hannah.jpg', role: 'Marketing Specialist' },
-  { name: 'Salamatu Conteh', image: '/salmata.jpg', role: 'Community Outreach Coordinator' },
+  { name: 'Leo Abdulai', image: leo, role: 'Project Manager' },
+  { name: 'Edward Bob-Kamara', image: edward, role: 'Lead Developer' },
+  { name: 'Hannah Barrie', image: hannah, role: 'Marketing Specialist' },
+  { name: 'Salamatu Conteh', image: salmata, role: 'Community Outreach Coordinator' },
 ];
 
 export default function About() {
@@ -90,7 +90,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="py-16">
+        <section className="py-16 flex items-center">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">Meet the Team</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
@@ -101,7 +101,7 @@ export default function About() {
                     alt={member.name} 
                     width={150} 
                     height={150} 
-                    className="rounded-full mx-auto mb-4 bg-gray-200" 
+                    className="rounded-full mx-auto mb-4 bg-gray-200 w-[100px] h-[100px]" 
                   />
                   <h3 className="font-semibold">{member.name}</h3>
                   <p className="text-sm text-gray-600">{member.role}</p>
