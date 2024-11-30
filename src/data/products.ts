@@ -30,8 +30,8 @@ export const products: Product[] = [
   { id: 'sweetPotatoFlour', name: 'Sweet Potato Flour', price: 'Nle500.00', image: productImages.SweetPotatoFlour, category: 'Local Content' },
   { id: 'cassavaLeaves', name: 'Cassava Leaves', price: 'Nle150.00', image: productImages.CassavaLeaves, category: 'Local Content' },
   { id: 'coconutOil', name: 'Coconut Oil', price: 'Nle300.00', image: productImages.CoconutOil, category: 'Local Content' },
-  { id: 'FoofooFlour1kg', name: 'Instant Foofoo(Cassava Flour) 1kg', price: 'Nle45.00', image: productImages.FoofooFlour, category: 'Local Content' },
-  { id: 'FoofooFlour5kg', name: 'Instant Foofoo(Cassava Flour) 5kg', price: 'Nle200.00', image: productImages.FoofooFlour, category: 'Local Content' },
+  { id: 'FoofooFlour1kg', name: 'Instant Foofoo(Cassava Flour) 1kg', price: 'Nle15.00', image: productImages.FoofooFlour, category: 'Local Content' },
+  { id: 'FoofooFlour5kg', name: 'Instant Foofoo(Cassava Flour) 5kg', price: 'Nle75.00', image: productImages.FoofooFlour, category: 'Local Content' },
 ]
 
 

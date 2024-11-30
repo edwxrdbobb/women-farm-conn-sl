@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image';
 import { useState } from 'react'
 
 interface PaymentFormProps {
@@ -25,7 +26,8 @@ export default function PaymentForm({ paymentMethod }: PaymentFormProps) {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="text-center mb-6">
-        <h2 className="text-xl font-semibold text-green-800">Complete Your {paymentMethod} Purchase</h2>
+ 
+        <h2 className="text-xl font-semibold text-green-800">Complete Your <span className="text-orange-600 font-bold"> {paymentMethod}</span>  Purchase</h2>
       </div>
       
       <input
