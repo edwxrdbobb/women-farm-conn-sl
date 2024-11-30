@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useRef } from 'react';
+import logo from '@/assets/images/logo.png'
 
 interface NavigationItem {
   name: string;
@@ -18,8 +19,6 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ navigation }) => {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const dropdownRef = useRef(null);
-
-  const logo = '/logo.png'; // Replace with your actual logo path
 
   return (
     <header className="bg-white shadow-sm">
