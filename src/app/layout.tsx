@@ -4,7 +4,7 @@ import Header from '@/components/Header'
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
+  { name: 'Market Space', href: '/market' },
   { 
     name: 'Financial Support', 
     href: '/finance',
@@ -15,6 +15,7 @@ const navigation = [
     ]
   },
   // { name: 'Resources', href: '/resources' },
+  { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
 ]
 
