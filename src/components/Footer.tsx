@@ -10,12 +10,12 @@ export default function Footer(){
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-wider">Address</h3>
-              <p className="mt-4 text-sm">123 Green Road, Freetown, Sierra Leone</p>
+              <p className="mt-4 text-sm">29 Old Railway Line, Freetown, Sierra Leone</p>
             </div>
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-wider">Contact</h3>
-              <p className="mt-4 text-sm">Email: info@womenfarmconnect.org</p>
-              <p className="mt-2 text-sm">Phone: +232 123 4567</p>
+              <p className="mt-4 text-sm">Email: info@womenfarmconnect.com</p>
+              <p className="mt-2 text-sm">Phone: +232 30 821164</p>
             </div>
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-wider">Social Media</h3>

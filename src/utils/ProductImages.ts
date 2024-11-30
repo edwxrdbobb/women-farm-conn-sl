@@ -19,7 +19,7 @@ import SweetPotatoFlour from '@/assets/images/potato leaves .jpeg'
 import CassavaLeaves from '@/assets/images/Cassava Leaves .png'
 import CoconutOil from '@/assets/images/cocnut oil.jpg'
 import PalmFish from '@/assets/images/palm Oil.jpeg'
-
+import FoofooFlour from '@/assets/images/fufu-powder.jpg'
 // Create an object with all product images
 const productImages: { [key: string]: StaticImageData } = {
   Banana,
@@ -40,6 +40,7 @@ const productImages: { [key: string]: StaticImageData } = {
   CassavaLeaves,
   CoconutOil,
   PalmFish,
+  FoofooFlour,
 }
 
 export default productImages

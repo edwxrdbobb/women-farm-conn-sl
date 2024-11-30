@@ -4,9 +4,18 @@ import Header from '@/components/Header'
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Market Access', href: '/market' },
-  { name: 'Financial Support', href: '/finance' },
-  { name: 'About Us', href: '/about' },
+  { name: 'About', href: '/about' },
+  { 
+    name: 'Financial Support', 
+    href: '/finance',
+    subItems: [
+      { name: 'How it works', href: '/finance' },
+      { name: 'Grant Seekers', href: '/finance/grant-seeker' },
+      { name: 'Active Grants', href: '/finance/active-grants' },
+    ]
+  },
+  { name: 'Resources', href: '/resources' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 export default function Layout({ children }: { children: React.ReactNode }) {

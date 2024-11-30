@@ -1,30 +1,25 @@
 "use client"
 
-import { useState, useRef, useEffect } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import logo from "@/assets/images/logo.png"
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { useState, useRef } from 'react';
 
-type NavigationLink = {
-  name: string
-  href: string
-  subItems?: { name: string; href: string }[]
+interface NavigationItem {
+  name: string;
+  href: string;
+  subItems?: NavigationItem[];
 }
 
-export default function Header({ navigation }: { navigation: NavigationLink[] }) {
-  const [openMenu, setOpenMenu] = useState<string | null>(null)
-  const dropdownRef = useRef<HTMLDivElement>(null)
+interface HeaderProps {
+  navigation: NavigationItem[];
+}
 
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setOpenMenu(null)
-      }
-    }
+const Header: React.FC<HeaderProps> = ({ navigation }) => {
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const dropdownRef = useRef(null);
 
-    document.addEventListener("mousedown", handleClickOutside)
-    return () => document.removeEventListener("mousedown", handleClickOutside)
-  }, [])
+  const logo = '/logo.png'; // Replace with your actual logo path
 
   return (
     <header className="bg-white shadow-sm">
@@ -101,6 +96,8 @@ export default function Header({ navigation }: { navigation: NavigationLink[] })
         </div>
       </nav>
     </header>
-  )
-}
+  );
+};
+
+export default Header;
 
