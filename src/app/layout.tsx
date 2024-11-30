@@ -14,7 +14,7 @@ const navigation = [
       { name: 'Active Grants', href: '/finance/active-grants' },
     ]
   },
-  { name: 'Resources', href: '/resources' },
+  // { name: 'Resources', href: '/resources' },
   { name: 'Contact', href: '/contact' },
 ]
 
