@@ -1,14 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-
-interface Programme {
-  title: string;
-  runningSince: string;
-  district: string;
-  targetReach: string;
-  keyFocusAreas: string[];
-  image: string;
-}
+import { Programme } from '@/types/Programme';
 
 interface ProgrammeModalProps {
   programme: Programme | null;

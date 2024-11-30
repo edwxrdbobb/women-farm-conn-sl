@@ -65,7 +65,7 @@ export default function ProductPage() {
                   </button>
                   <span className="text-xl">{quantity}</span>
                   <button
-                    onClick={() => setQuantity(prev => prev + 1))}
+                    onClick={() => setQuantity(prev => prev + 1)}
                     className="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center"
                     aria-label="Increase quantity"
                   >
